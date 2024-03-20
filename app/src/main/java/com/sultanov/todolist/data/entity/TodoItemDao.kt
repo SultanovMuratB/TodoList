@@ -10,6 +10,8 @@ internal data class TodoItemDao(
     val uid: Int,
     @ColumnInfo(name = "name")
     val name: String,
+    @ColumnInfo(name = "visible")
+    val visible: Boolean,
     @ColumnInfo(name = "quantity")
     val quantity: Int,
 )

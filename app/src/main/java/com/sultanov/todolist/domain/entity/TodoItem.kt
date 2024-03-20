@@ -1,6 +1,8 @@
 package com.sultanov.todolist.domain.entity
 
-data class TodoItem(
+internal data class TodoItem(
+    val uid: Int,
     val name: String,
+    val visible: Boolean,
     val quantity: Int,
 )
