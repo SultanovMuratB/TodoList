@@ -1,4 +1,4 @@
-package com.sultanov.todolist.data
+package com.sultanov.todolist.data.database
 
 import androidx.room.Dao
 import androidx.room.Delete

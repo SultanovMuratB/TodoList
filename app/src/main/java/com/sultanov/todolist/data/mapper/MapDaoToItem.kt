@@ -5,7 +5,7 @@ import com.sultanov.todolist.domain.entity.TodoItem
 
 internal class MapDaoToItem {
 
-    fun mapDaoToItem(itemDao: TodoItemDao) : TodoItem {
+    private fun mapDaoToItem(itemDao: TodoItemDao) : TodoItem {
         return TodoItem(
             uid = itemDao.uid,
             name = itemDao.name,

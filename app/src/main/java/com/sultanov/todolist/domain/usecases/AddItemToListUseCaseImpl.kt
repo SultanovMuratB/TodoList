@@ -7,7 +7,7 @@ internal class AddItemToListUseCaseImpl(
     private val repository: TodoListRepository
 ) : AddItemToListUseCase {
 
-    override fun addToList(todoItem: TodoItem) {
+    override suspend fun addToList(todoItem: TodoItem) {
         repository.addItem(todoItem)
     }
 }

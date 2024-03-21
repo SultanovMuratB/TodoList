@@ -7,7 +7,7 @@ internal class GetTodoListUseCaseImpl(
     private val todoListRepository: TodoListRepository
 ) : GetTodoListUseCase {
 
-    override fun getTodoList(): List<TodoItem> {
+    override suspend fun getTodoList(): List<TodoItem>? {
         return todoListRepository.getTodoList()
     }
 }

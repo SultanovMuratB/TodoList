@@ -9,6 +9,6 @@ internal interface TodoListRepository {
     suspend fun addItem(todoItem: TodoItem)
 
     suspend fun deleteItem(todoItem: TodoItem)
-
-    suspend fun insertItem(todoItem: TodoItem)
+//
+//    suspend fun insertItem(todoItem: TodoItem)
 }

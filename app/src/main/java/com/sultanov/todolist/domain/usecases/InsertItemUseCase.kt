@@ -4,5 +4,5 @@ import com.sultanov.todolist.domain.entity.TodoItem
 
 internal interface InsertItemUseCase {
 
-    fun insertItem(todoItem: TodoItem)
+    suspend fun insertItem(todoItem: TodoItem)
 }

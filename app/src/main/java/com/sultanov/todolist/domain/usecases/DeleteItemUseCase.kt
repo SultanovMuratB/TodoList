@@ -4,5 +4,5 @@ import com.sultanov.todolist.domain.entity.TodoItem
 
 internal interface DeleteItemUseCase {
 
-    fun deleteItem(todoItem: TodoItem)
+    suspend fun deleteItem(todoItem: TodoItem)
 }

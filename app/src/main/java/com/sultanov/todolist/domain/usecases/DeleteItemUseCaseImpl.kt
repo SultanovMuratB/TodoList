@@ -7,7 +7,7 @@ internal class DeleteItemUseCaseImpl(
     private val repository: TodoListRepository
 ) : DeleteItemUseCase {
 
-    override fun deleteItem(todoItem: TodoItem) {
+    override suspend fun deleteItem(todoItem: TodoItem) {
         repository.deleteItem(todoItem)
     }
 }

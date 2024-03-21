@@ -4,5 +4,5 @@ import com.sultanov.todolist.domain.entity.TodoItem
 
 internal interface GetTodoListUseCase {
 
-    fun getTodoList(): List<TodoItem>
+    suspend fun getTodoList(): List<TodoItem>?
 }
